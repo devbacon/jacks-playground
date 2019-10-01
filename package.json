@@ -16,7 +16,5 @@
     "url": "https://github.com/devbacon/jacks-playground/issues"
   },
   "homepage": "https://github.com/devbacon/jacks-playground#readme",
-  "dependencies": {
-    "vue": "^2.6.10"
-  }
+  "dependencies": {}
 }
