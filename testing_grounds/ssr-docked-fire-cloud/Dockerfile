@@ -1,3 +1,4 @@
+# base node image
 FROM node:10
 
 WORKDIR /usr/src/app
@@ -7,7 +8,7 @@ ENV HOST 0.0.0.0
 
 COPY package*.json ./
 
-RUN npm run --only=production
+RUN npm install --only=production
 
 # Copy local nuxt code to the container
 COPY . .
