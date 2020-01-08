@@ -7,4 +7,4 @@ RUN svn co http://svn.apache.org/repos/asf/ofbiz/branches/release16.11 ofbiz.16.
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.232.b09-0.el7_7.x86_64
 ENV PATH=$PATH:$JAVA_HOME/bin
 
-ENTRYPOINT cd ofbiz*; ./gradlew cleanAll loadDefault ofbiz
+# ENTRYPOINT cd ofbiz*; ./gradlew cleanAll loadDefault ofbiz
