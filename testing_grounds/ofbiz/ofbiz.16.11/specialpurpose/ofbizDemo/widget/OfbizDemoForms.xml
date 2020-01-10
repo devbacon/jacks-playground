@@ -18,14 +18,22 @@
         <field name="submitButton" title="${uiLabelMap.CommonAdd}"><submit button-type="button"/></field>
     </form>
 
-    <form name="AddOfbizDemoJavaService" type="single" target="createOfbizDemoByJavaService">
-        <!-- We have this utility in OFBiz to render form based on service definition.
-             Service attributes will automatically lookedup and will be shown on form
-        -->
+    <form name="AddOfbizDemoByJavaService" type="single" target="createOfbizDemoByJavaService">
         <auto-fields-service service-name="createOfbizDemoByJavaService"/>
         <field name="ofbizDemoTypeId" title="${uiLabelMap.CommonType}">
             <drop-down allow-empty="false" current-description="">
-                <!---We have made this drop down options dynamic(Values from db) using this -->
+                <entity-options description="${description}" key-field-name="ofbizDemoTypeId" entity-name="OfbizDemoType">
+                    <entity-order-by field-name="description"/>
+                </entity-options>
+            </drop-down>
+        </field>
+        <field name="submitButton" title="${uiLabelMap.CommonAdd}"><submit button-type="button"/></field>
+    </form>
+
+    <form name="AddOfbizDemoByGroovyService" type="single" target="createOfbizDemoByGroovyService">
+        <auto-fields-service service-name="createOfbizDemoByGroovyService"/>
+        <field name="ofbizDemoTypeId" title="${uiLabelMap.CommonType}">
+            <drop-down allow-empty="false" current-description="">
                 <entity-options description="${description}" key-field-name="ofbizDemoTypeId" entity-name="OfbizDemoType">
                     <entity-order-by field-name="description"/>
                 </entity-options>

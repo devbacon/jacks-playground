@@ -13,7 +13,12 @@
                         <!-- <label text="Hello World!! :)"/> -->
                         <screenlet title="Add Ofbiz Demo">
                             <include-form name="AddOfbizDemo" location="component://ofbizDemo/widget/OfbizDemoForms.xml"/>
-                            <include-form name="AddOfbizDemoJavaService" location="component://ofbizDemo/widget/OfbizDemoForms.xml"/>
+                        </screenlet>
+                        <screenlet title="Add Ofbiz Demo Java">
+                            <include-form name="AddOfbizDemoByJavaService" location="component://ofbizDemo/widget/OfbizDemoForms.xml"/>
+                        </screenlet>
+                        <screenlet title="Add Ofbiz Demo Groovy">
+                            <include-form name="AddOfbizDemoByGroovyService" location="component://ofbizDemo/widget/OfbizDemoForms.xml"/>
                         </screenlet>
                     </decorator-section>
                 </decorator-screen>
