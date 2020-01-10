@@ -21,7 +21,8 @@
     -->
 
     <!-- Request Mappings -->
-    <request-map uri="main"><security https="true" auth="true"/><response name="success" type="view" value="main"/></request-map>
+
+    <!-- Service Mappings -->
 
     <request-map uri="createOfbizDemo">
         <security https="true" auth="true"/>
@@ -41,9 +42,34 @@
         <response name="success" type="view" value="main"/>
     </request-map>
 
-    <request-map uri="FindOfbizDemo"><security https="true" auth="true"/><response name="success" type="view" value="FindOfbizDemo"/></request-map>
+    <!-- Event Mappings -->
+
+     <request-map uri="createOfbizDemoEvent">
+        <security https="true" auth="true"/>
+        <event type="java" path="com.companyname.ofbizdemo.events.OfbizDemoEvents" invoke="createOfbizDemoEvent"/>
+        <response name="success" type="view" value="main"/>
+        <response name="error" type="view" value="main"/>
+    </request-map>
+
+    <!-- Page Mappings -->
+
+    <request-map uri="main">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="main"/>
+    </request-map>
+
+    <request-map uri="CreateOfbizDemo">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="CreateOfbizDemo"/>
+    </request-map>
+
+    <request-map uri="FindOfbizDemo">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="FindOfbizDemo"/>
+    </request-map>
     
     <!-- View Mapping -->
     <view-map name="main" type="screen" page="component://ofbizDemo/widget/OfbizDemoScreens.xml#main"/>
+    <view-map name="CreateOfbizDemo" type="screen" page="component://ofbizDemo/widget/OfbizDemoScreens.xml#CreateOfbizDemo"/>
     <view-map name="FindOfbizDemo" type="screen" page="component://ofbizDemo/widget/OfbizDemoScreens.xml#FindOfbizDemo"/>
 </site-conf>
