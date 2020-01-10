@@ -18,6 +18,22 @@
         <field name="submitButton" title="${uiLabelMap.CommonAdd}"><submit button-type="button"/></field>
     </form>
 
+    <form name="AddOfbizDemoJavaService" type="single" target="createOfbizDemoByJavaService">
+        <!-- We have this utility in OFBiz to render form based on service definition.
+             Service attributes will automatically lookedup and will be shown on form
+        -->
+        <auto-fields-service service-name="createOfbizDemoByJavaService"/>
+        <field name="ofbizDemoTypeId" title="${uiLabelMap.CommonType}">
+            <drop-down allow-empty="false" current-description="">
+                <!---We have made this drop down options dynamic(Values from db) using this -->
+                <entity-options description="${description}" key-field-name="ofbizDemoTypeId" entity-name="OfbizDemoType">
+                    <entity-order-by field-name="description"/>
+                </entity-options>
+            </drop-down>
+        </field>
+        <field name="submitButton" title="${uiLabelMap.CommonAdd}"><submit button-type="button"/></field>
+    </form>
+
     <form name="FindOfbizDemo" type="single" target="FindOfbizDemo" default-entity-name="OfbizDemo">
         <field name="noConditionFind"><hidden value="Y"/> <!-- if this isn't there then with all fields empty no query will be done --></field>
         <field name="ofbizDemoId" title="${uiLabelMap.OfbizDemoId}"><text-find/></field>
