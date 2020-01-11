@@ -40,7 +40,7 @@ public class OfbizDemoEvents {
             request.setAttribute("_ERROR_MESSAGE_", errMsg);
             return "error";
         }
-        request.setAttribute("_EVENT_MESSAGE_", "OFBiz Demo created succesfully.");
+        request.setAttribute("_EVENT_MESSAGE_", "OFBiz Demo created successfully.");
         return "success";
     }
 }

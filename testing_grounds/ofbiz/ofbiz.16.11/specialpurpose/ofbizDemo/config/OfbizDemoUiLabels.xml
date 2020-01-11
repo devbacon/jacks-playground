@@ -22,6 +22,9 @@
         <value xml:lang="en">OFBiz Demo Id</value>
     </property>
     <property key="OfbizDemoLastName">
-    <value xml:lang="en">Last Name</value>
+        <value xml:lang="en">Last Name</value>
+    </property>
+    <property key="OfbizDemoAddFtl">
+        <value xml:lang="en">Add FTL</value>
     </property>
 </resource>
