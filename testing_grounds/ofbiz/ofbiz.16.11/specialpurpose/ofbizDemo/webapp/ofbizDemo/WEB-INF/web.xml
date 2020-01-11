@@ -2,6 +2,11 @@
 <web-app version="3.0">
     <display-name>Apache OFBiz - OfbizDemo Component</display-name>
     <description>OfbizDemo Component of the Apache OFBiz Project</description>
+    
+    <init-param>
+        <param-name>allowedPaths</param-name>
+        <param-value>/error:/control:/select:/index.html:/index.jsp:/default.html:/default.jsp:/images:/includes/maincss.css:/css:/js</param-value>
+    </init-param>
 
     <!-- context-param>
         <param-name>webSiteId</param-name>

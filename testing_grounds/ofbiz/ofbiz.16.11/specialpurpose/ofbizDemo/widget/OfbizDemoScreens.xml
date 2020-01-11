@@ -74,7 +74,7 @@
         </section>
     </screen>
 
-    <screen name="AddOfbizDemoFtl">
+    <!-- <screen name="AddOfbizDemoFtl">
         <section>
             <actions>
                 <set field="titleProperty" value="PageTitleAddOfbizDemos"/>
@@ -94,6 +94,30 @@
                                 <html><html-template location="component://ofbizDemo/webapp/ofbizDemo/crud/AddOfbizDemo.ftl"/></html>
                             </platform-specific>
                         </screenlet>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen> -->
+
+    <screen name="AddOfbizDemoFtl">
+        <section>
+            <actions>
+                <set field="titleProperty" value="OfbizDemoAddOfbizDemoFtl"/>
+                <set field="headerItem" value="addOfbizDemoFtl"/>
+                <script location="component://ofbizDemo/webapp/ofbizDemo/WEB-INF/actions/crud/ListOfbizDemo.groovy"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="OfbizDemoCommonDecorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <label style="h4" text="${uiLabelMap.OfbizDemoListOfbizDemos}"/>
+                        <platform-specific>
+                            <html><html-template location="component://ofbizDemo/webapp/ofbizDemo/crud/ListOfbizDemo.ftl"/></html>
+                        </platform-specific>
+                        <label style="h4" text="${uiLabelMap.OfbizDemoAddOfbizDemoFtl}"/>
+                        <platform-specific>
+                            <html><html-template location="component://ofbizDemo/webapp/ofbizDemo/crud/AddOfbizDemo.ftl"/></html>
+                        </platform-specific>
                     </decorator-section>
                 </decorator-screen>
             </widgets>
