@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SecurityGroupPermission groupId="FULLADMIN" permissionId="MAPCREATOR_ADMIN"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="MAPCREATOR_CREATE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="MAPCREATOR_DELETE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="MAPCREATOR_UPDATE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="MAPCREATOR_VIEW"/>
+    <SecurityGroupPermission groupId="VIEWADMIN" permissionId="MAPCREATOR_VIEW"/>
+    <SecurityGroupPermission groupId="BIZADMIN" permissionId="MAPCREATOR_ADMIN"/>
+</entity-engine-xml>

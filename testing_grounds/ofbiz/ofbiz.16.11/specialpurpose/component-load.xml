@@ -17,4 +17,5 @@
   <load-component component-location="exampleext"/>
   <load-component component-location="passport"/>
   <load-component component-location="ofbizDemo"/>
+  <load-component component-location="mapCreator"/>
 </component-loader>

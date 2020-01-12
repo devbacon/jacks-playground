@@ -29,9 +29,9 @@
                 <decorator-screen name="OfbizDemoCommonDecorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">
                         <screenlet title="Add Ofbiz Demo Java">
-                            <include-form name="AddOfbizDemo" location="component://ofbizDemo/widget/OfbizDemoForms.xml"/>
+                            <!-- <include-form name="AddOfbizDemo" location="component://ofbizDemo/widget/OfbizDemoForms.xml"/> -->
                             <include-form name="AddOfbizDemoByJavaService" location="component://ofbizDemo/widget/OfbizDemoForms.xml"/>
-                            <include-form name="AddOfbizDemoByGroovyService" location="component://ofbizDemo/widget/OfbizDemoForms.xml"/>
+                            <!-- <include-form name="AddOfbizDemoByGroovyService" location="component://ofbizDemo/widget/OfbizDemoForms.xml"/> -->
                         </screenlet>
                     </decorator-section>
                 </decorator-screen>

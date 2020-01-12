@@ -22,7 +22,7 @@
         </section>
     </screen>
 
-    <!-- <screen name="OfbizDemoCommonDecorator">
+    <screen name="OfbizDemoCommonDecorator">
         <section>
             <actions>
             </actions>
@@ -44,9 +44,9 @@
                 </decorator-screen>
             </widgets>
         </section>
-    </screen> -->
+    </screen>
 
-    <screen name="OfbizDemoCommonDecorator">
+    <!-- <screen name="OfbizDemoCommonDecorator">
         <section>
             <actions>
                 <property-map resource="OfbizDemoUiLabels" map-name="uiLabelMap" global="true"/>
@@ -54,12 +54,7 @@
     
                 <set field="layoutSettings.companyName" from-field="uiLabelMap.OfbizDemoCompanyName" global="true"/>
                 
-                <!-- Including custom CSS Styles that you want to use in your application view. [] in field can be used to 
-                    set the order of loading CSS files to load if there are multiple -->
                 <set field="layoutSettings.styleSheets[]" value="/ofbizDemo/css/bootstrap.min.css"/>
-    
-                <!-- Including custom JS that you want to use in your application view. [] in field can be used to
-                    set the order of loading of JS files to load if there are multiple -->
                 <set field="layoutSettings.javaScripts[+0]" value="/ofbizDemo/js/bootstrap.min.js" global="true"/>
             </actions>
             <widgets>
@@ -79,5 +74,5 @@
                 </section>
             </widgets>
         </section>
-    </screen>
+    </screen> -->
 </screens>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SecurityPermission description="View operations in the MapCreator Component." permissionId="MAPCREATOR_VIEW"/>
+    <SecurityPermission description="Create operations in the MapCreator Component." permissionId="MAPCREATOR_CREATE"/>
+    <SecurityPermission description="Update operations in the MapCreator Component." permissionId="MAPCREATOR_UPDATE"/>
+    <SecurityPermission description="Delete operations in the MapCreator Component." permissionId="MAPCREATOR_DELETE"/>
+    <SecurityPermission description="ALL operations in the MapCreator Component." permissionId="MAPCREATOR_ADMIN"/>
+
+    <SecurityGroupPermission groupId="SUPER" permissionId="MAPCREATOR_ADMIN"/>
+
+</entity-engine-xml>
