@@ -21,7 +21,8 @@
             <li>
                 <a href="<@ofbizUrl>main</@ofbizUrl>">Main</a>
             </li>
-            <li class="active"><span class="flipper-title">${StringUtil.wrapString(uiLabelMap[titleProperty])}</span></li>
+            <#--  <li class="active"><span class="flipper-title">${StringUtil.wrapString(uiLabelMap[titleProperty])}</span></li>  -->
+            <li class="active"><span class="flipper-title">Fuck It</span></li>
             <li class="pull-right">
               <a href="<@ofbizUrl>logout</@ofbizUrl>" title="${uiLabelMap.CommonLogout}">logout</i></a>
             </li>
