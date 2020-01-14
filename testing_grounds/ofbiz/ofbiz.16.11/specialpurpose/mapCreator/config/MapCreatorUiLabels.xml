@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/ofbiz-properties.xsd">
     <property key="MapCreatorApplication">
-        <value xml:lang="en">MapCreator Application</value>
-        <value xml:lang="zh">MapCreator应用程�?</value>
-        <value xml:lang="zh-TW">MapCreator應用程�?</value>
+        <value xml:lang="en">Map Creator Application</value>
     </property>
     <property key="MapCreatorCompanyName">
-        <value xml:lang="en">OFBiz: MapCreator</value>
-        <value xml:lang="zh-TW">OFBiz: MapCreator</value>
+        <value xml:lang="en">OFBiz: Map Creator</value>
+        <value xml:lang="zh-TW">OFBiz: Map Creator</value>
     </property>
     <property key="MapCreatorCompanySubtitle">
         <value xml:lang="en">Part of the Apache OFBiz Family of Open Source Software</value>
-        <value xml:lang="it">Un modulo della famiglia di software open source Apache OFBiz</value>
-        <value xml:lang="zh">开�?软件OFBiz的组�?部分</value>
-        <value xml:lang="zh-TW">開�?軟體OFBiz的組�?部分</value>
     </property>
     <property key="MapCreatorViewPermissionError">
         <value xml:lang="en">You are not allowed to view this page.</value>
-        <value xml:lang="zh">�?�?许你�?览这个页�?�。</value>
-        <value xml:lang="zh-TW">�?�?許您檢視這個�?�?�.</value>
     </property>
 </resource>

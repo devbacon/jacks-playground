@@ -9,4 +9,33 @@
     <copyright></copyright>
     <version></version>
 
+    <entity entity-name="GameMap" package-name="org.apache.ofbiz.mapCreator" title="MapCreator Map Entity">
+        <field name="mapId" type="id"><description>primary sequenced ID</description></field>
+        <field name="name" type="value"></field>
+        <field name="height" type="numeric"></field>
+        <field name="width" type="numeric"></field>
+        <prim-key field="mapId"/>
+    </entity>
+  
+    <entity entity-name="Tile" package-name="org.apache.ofbiz.mapCreator" title="MapCreator Tile Entity">
+        <field name="tileId" type="id"><description>primary sequenced ID</description></field>
+        <field name="mapId" type="id"></field>
+        <prim-key field="tileId"/>
+        <relation type="one" fk-name="GMAP_ID" rel-entity-name="GameMap">
+            <key-map field-name="mapId"/>
+        </relation>
+    </entity>
+
+    <entity entity-name="Line" package-name="org.apache.ofbiz.mapCreator" title="MapCreator Tile Entity">
+        <field name="lineId" type="id"><description>primary sequenced ID</description></field>
+        <field name="mapId" type="id"></field>
+        <field name="xStart" type="numeric"></field>
+        <field name="yStart" type="numeric"></field>
+        <field name="xEnd" type="numeric"></field>
+        <field name="yEnd" type="numeric"></field>
+        <prim-key field="lineId"/>
+        <relation type="one" fk-name="GMAP_ID" rel-entity-name="GameMap">
+            <key-map field-name="mapId"/>
+        </relation>
+    </entity>
 </entitymodel>

@@ -32,8 +32,8 @@ public class OfbizDemoEvents {
         String comments = request.getParameter("comments");
  
         try {
-            Debug.logInfo("=======Creating OfbizDemo record in event using service createOfbizDemoByGroovyService=========", module);
-            dispatcher.runSync("createOfbizDemoByGroovyService", UtilMisc.toMap("ofbizDemoTypeId", ofbizDemoTypeId,
+            Debug.logInfo("=======Creating OfbizDemo record in event using service createOfbizDemoByJavaService=========", module);
+            dispatcher.runSync("createOfbizDemoByJavaService", UtilMisc.toMap("ofbizDemoTypeId", ofbizDemoTypeId,
                     "firstName", firstName, "lastName", lastName, "comments", comments, "userLogin", userLogin));
         } catch (GenericServiceException e) {
             String errMsg = "Unable to create new records in OfbizDemo entity: " + e.toString();

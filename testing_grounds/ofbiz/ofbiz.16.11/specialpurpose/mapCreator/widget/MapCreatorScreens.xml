@@ -6,10 +6,14 @@
         <section>
             <actions>
                 <set field="headerItem" value="main"/><!-- this highlights the selected menu-item with name "main" -->
+                <script location="component://mapCreator/webapp/mapCreator/WEB-INF/actions/main.groovy"/>
             </actions>
             <widgets>
                 <decorator-screen name="MapCreatorCommonDecorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">
+                        <platform-specific>
+                            <html><html-template location="component://mapCreator/webapp/mapCreator/ftl/main.ftl"/></html>
+                        </platform-specific>
                     </decorator-section>
                 </decorator-screen>
             </widgets>
