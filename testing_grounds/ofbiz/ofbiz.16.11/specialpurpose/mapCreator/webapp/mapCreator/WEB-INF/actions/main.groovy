@@ -1,3 +1,3 @@
 context.groovyVar = "Just dandy :)";
-createdGameMaps = delegator.findList("GameMaps", null, null, null, null, false);
+createdGameMaps = delegator.findList("GameMap", null, null, null, null, false);
 context.createdGameMaps = createdGameMaps;

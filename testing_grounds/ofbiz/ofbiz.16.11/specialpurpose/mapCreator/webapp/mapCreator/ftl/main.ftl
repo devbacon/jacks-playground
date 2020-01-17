@@ -5,4 +5,21 @@
     <input type="text" name="height" placeholder="Map Height in Squares"/>
     <button type="submit">Create</button>
 </form>
-
+<table>
+    <thead>
+        <tr>
+            <td>Map Name</td>
+            <td>Map Height</td>
+            <td>Map Width</td>
+        </tr>
+    </thead>
+    <tbody>
+    <#list createdGameMaps as map>
+        <tr>
+            <td>${map.name}</td>
+            <td>${map.height}</td>
+            <td>${map.width}</td>
+        </tr>
+    </#list>
+    </tbody>
+</table>
