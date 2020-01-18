@@ -12,8 +12,8 @@
     <entity entity-name="GameMap" package-name="org.apache.ofbiz.mapCreator" title="MapCreator Map Entity">
         <field name="mapId" type="id"><description>primary sequenced ID</description></field>
         <field name="name" type="value"></field>
-        <field name="height" type="numeric"></field>
-        <field name="width" type="numeric"></field>
+        <field name="height" type="value"></field>
+        <field name="width" type="value"></field>
         <prim-key field="mapId"/>
     </entity>
   

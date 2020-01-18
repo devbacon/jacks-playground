@@ -35,7 +35,7 @@ public class MapCreatorEvents {
  
         try {
             Debug.logInfo("======= Creating GameMap record: mapId=" + mapId + " =========", module);
-            GenericValue newGameMap = delegator.makeValue("GameMap", UtilMisc.toMap("mapId", mapId, "name", name, "height", heightInt, "width", widthInt));
+            GenericValue newGameMap = delegator.makeValue("GameMap", UtilMisc.toMap("mapId", mapId, "name", name, "height", height, "width", width));
             newGameMap.create();
         } catch (GenericEntityException e) {
             String errMsg = "Unable to create new records in GameMap entity: " + e.toString();
