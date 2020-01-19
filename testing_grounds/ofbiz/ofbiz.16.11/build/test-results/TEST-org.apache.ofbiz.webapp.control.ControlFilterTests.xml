@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.apache.ofbiz.webapp.control.ControlFilterTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-01-19T18:45:09" hostname="L-TPP52-01" time="0.006">
-  <properties/>
-  <testcase name="initRetrievesAllInitParameters" classname="org.apache.ofbiz.webapp.control.ControlFilterTests" time="0.005"/>
-  <testcase name="initSetsProperErrorCode" classname="org.apache.ofbiz.webapp.control.ControlFilterTests" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

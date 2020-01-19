@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.apache.ofbiz.entity.util.EntitySaxReaderTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-19T18:45:09" hostname="L-TPP52-01" time="0.25">
-  <properties/>
-  <testcase name="parse" classname="org.apache.ofbiz.entity.util.EntitySaxReaderTests" time="0.249"/>
-  <testcase name="constructorWithDefaultTimeout" classname="org.apache.ofbiz.entity.util.EntitySaxReaderTests" time="0.001"/>
-  <testcase name="constructorWithTimeout" classname="org.apache.ofbiz.entity.util.EntitySaxReaderTests" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
