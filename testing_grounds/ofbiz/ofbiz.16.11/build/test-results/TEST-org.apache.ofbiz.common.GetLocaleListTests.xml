@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.apache.ofbiz.common.GetLocaleListTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-17T03:47:34" hostname="L-TPP52-01" time="0.817">
+<testsuite name="org.apache.ofbiz.common.GetLocaleListTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-19T04:45:48" hostname="L-TPP52-01" time="0.795">
   <properties/>
-  <testcase name="frenchLocaleString" classname="org.apache.ofbiz.common.GetLocaleListTests" time="0.688"/>
-  <testcase name="frenchNoDuplicates" classname="org.apache.ofbiz.common.GetLocaleListTests" time="0.063"/>
-  <testcase name="frenchLocaleName" classname="org.apache.ofbiz.common.GetLocaleListTests" time="0.066"/>
-  <system-out><![CDATA[19:47:34.506 [Test worker] ERROR org.apache.ofbiz.base.location.ComponentLocationResolver - Could not get root location for component with name [base], error was: org.apache.ofbiz.base.component.ComponentException: No component found named : base
+  <testcase name="frenchLocaleName" classname="org.apache.ofbiz.common.GetLocaleListTests" time="0.672"/>
+  <testcase name="frenchLocaleString" classname="org.apache.ofbiz.common.GetLocaleListTests" time="0.065"/>
+  <testcase name="frenchNoDuplicates" classname="org.apache.ofbiz.common.GetLocaleListTests" time="0.058"/>
+  <system-out><![CDATA[20:45:48.655 [Test worker] ERROR org.apache.ofbiz.base.location.ComponentLocationResolver - Could not get root location for component with name [base], error was: org.apache.ofbiz.base.component.ComponentException: No component found named : base
 org.apache.ofbiz.base.component.ComponentException: No component found named : base
 	at org.apache.ofbiz.base.component.ComponentConfig.getComponentConfig(ComponentConfig.java:266) ~[main/:?]
 	at org.apache.ofbiz.base.component.ComponentConfig.getComponentConfig(ComponentConfig.java:241) ~[main/:?]
@@ -17,7 +17,7 @@ org.apache.ofbiz.base.component.ComponentException: No component found named : b
 	at org.apache.ofbiz.base.util.GroovyUtil.runScriptAtLocation(GroovyUtil.java:201) [main/:?]
 	at org.apache.ofbiz.base.util.GroovyUtil.<clinit>(GroovyUtil.java:66) [main/:?]
 	at org.apache.ofbiz.common.GetLocaleListTests.runScript(GetLocaleListTests.java:51) [test/:?]
-	at org.apache.ofbiz.common.GetLocaleListTests.frenchLocaleString(GetLocaleListTests.java:71) [test/:?]
+	at org.apache.ofbiz.common.GetLocaleListTests.frenchLocaleName(GetLocaleListTests.java:64) [test/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_201]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_201]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_201]

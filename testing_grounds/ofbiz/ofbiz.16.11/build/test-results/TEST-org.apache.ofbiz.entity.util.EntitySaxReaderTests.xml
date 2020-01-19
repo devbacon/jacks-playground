@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.apache.ofbiz.entity.util.EntitySaxReaderTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-17T03:47:41" hostname="L-TPP52-01" time="0.175">
+<testsuite name="org.apache.ofbiz.entity.util.EntitySaxReaderTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-19T04:45:56" hostname="L-TPP52-01" time="0.189">
   <properties/>
-  <testcase name="parse" classname="org.apache.ofbiz.entity.util.EntitySaxReaderTests" time="0.174"/>
+  <testcase name="parse" classname="org.apache.ofbiz.entity.util.EntitySaxReaderTests" time="0.188"/>
   <testcase name="constructorWithTimeout" classname="org.apache.ofbiz.entity.util.EntitySaxReaderTests" time="0.001"/>
   <testcase name="constructorWithDefaultTimeout" classname="org.apache.ofbiz.entity.util.EntitySaxReaderTests" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

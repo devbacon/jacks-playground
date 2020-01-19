@@ -1,4 +1,5 @@
 bin/
+build/
 applications/*/build
 framework/*/build
 hot-deploy/*/build
