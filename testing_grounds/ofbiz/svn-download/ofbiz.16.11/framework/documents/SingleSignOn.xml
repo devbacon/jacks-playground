@@ -203,7 +203,7 @@
                         </listitem>
                         <listitem>
                             <para>
-                                CasUrl : CAS Server's URL e.g. https://localhost:8443/cas
+                                CasUrl : CAS Server's URL e.g. https://localhost:443/cas
                             </para>
                         </listitem>
                         <listitem>

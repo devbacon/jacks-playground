@@ -474,7 +474,7 @@ public class WorkEffortServices {
          To create testdata for  this function for  fixedasset/facility
 
         1) go to Manufacturing -> JobShop, then click on "create new Production run":
-                https://localhost:8443/manufacturing/control/CreateProductionRun
+                https://localhost:443/manufacturing/control/CreateProductionRun
         2) enter as productId "PROD_MANUF", quantity 1, start date tomorrow and press the submit button
     `    3) in the next screen, click on the "Confirm" link (top part of the sccreen)
 

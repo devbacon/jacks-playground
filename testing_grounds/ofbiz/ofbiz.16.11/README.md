@@ -104,11 +104,11 @@ Unix-like OS:
 
 ### Visit OFBiz through your browser:
 
-[Order Back Office](https://localhost:8443/ordermgr)
+[Order Back Office](https://localhost:443/ordermgr)
 
-[Accounting Back Office](https://localhost:8443/accounting)
+[Accounting Back Office](https://localhost:443/accounting)
 
-[Administrator interface](https://localhost:8443/webtools)
+[Administrator interface](https://localhost:443/webtools)
 
 You can log in with the user __admin__ and password __ofbiz__.
 

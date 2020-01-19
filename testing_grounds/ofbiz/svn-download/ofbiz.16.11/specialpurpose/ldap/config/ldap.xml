@@ -34,7 +34,7 @@ under the License.
     <!-- for CAS-LDAP -->
     <CasLoginUri>/login</CasLoginUri>
     <CasLogoutUri>/logout</CasLogoutUri>
-    <CasUrl>https://localhost:8443/cas</CasUrl>
+    <CasUrl>https://localhost:443/cas</CasUrl>
     <CasValidateUri>/validate</CasValidateUri>
     <CasLdapHandler>org.apache.ofbiz.ldap.openldap.OFBizLdapAuthenticationHandler</CasLdapHandler>
     <CasTGTCookieName>CASTGC</CasTGTCookieName>

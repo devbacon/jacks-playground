@@ -68,7 +68,7 @@ public final class OFBizCasAuthenticationHandler extends AbstractOFBizAuthentica
         String username = request.getParameter("USERNAME");
         String password = request.getParameter("PASSWORD");
 
-        String casUrl = UtilXml.childElementValue(rootElement, "CasUrl", "https://localhost:8443/cas");
+        String casUrl = UtilXml.childElementValue(rootElement, "CasUrl", "https://localhost:443/cas");
         String loginUri = UtilXml.childElementValue(rootElement, "CasLoginUri", "/login");
         String validateUri = UtilXml.childElementValue(rootElement, "CasValidateUri", "/validate");
         String serviceUrl = request.getRequestURL().toString();
@@ -146,7 +146,7 @@ public final class OFBizCasAuthenticationHandler extends AbstractOFBizAuthentica
 
     @Override
     public String logout(HttpServletRequest request, HttpServletResponse response, Element rootElement) {
-        String casUrl = UtilXml.childElementValue(rootElement, "CasUrl", "https://localhost:8443/cas");
+        String casUrl = UtilXml.childElementValue(rootElement, "CasUrl", "https://localhost:443/cas");
         String logoutUri = UtilXml.childElementValue(rootElement, "CasLogoutUri", "/logout");
         try {
             response.sendRedirect(casUrl + logoutUri);
@@ -186,7 +186,7 @@ public final class OFBizCasAuthenticationHandler extends AbstractOFBizAuthentica
     @Override
     public boolean hasLdapLoggedOut(HttpServletRequest request, HttpServletResponse response, Element rootElement) {
         String casTGC = UtilXml.childElementValue(rootElement, "CasTGTCookieName", "CASTGC");
-        String casUrl = UtilXml.childElementValue(rootElement, "CasUrl", "https://localhost:8443/cas");
+        String casUrl = UtilXml.childElementValue(rootElement, "CasUrl", "https://localhost:443/cas");
         Cookie[] cookies = request.getCookies();
         if (cookies == null) return true;
         for (int i=0; i < cookies.length; i++) {

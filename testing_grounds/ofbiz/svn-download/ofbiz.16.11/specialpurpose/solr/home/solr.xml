@@ -31,7 +31,7 @@
   <solrcloud>
 
     <str name="host">${host:}</str>
-    <int name="hostPort">${jetty.port:8443}</int>
+    <int name="hostPort">${jetty.port:443}</int>
     <str name="hostContext">${hostContext:solr}</str>
 
     <bool name="genericCoreNodeNames">${genericCoreNodeNames:true}</bool>

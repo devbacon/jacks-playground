@@ -163,7 +163,7 @@ public final class OfbizUrlBuilder {
             if (!webSiteProps.getHttpsPort().isEmpty()) {
                 buffer.append(":").append(webSiteProps.getHttpsPort());
             } else if ("localhost".equals(server)) {
-                buffer.append(":").append("8443"); // We suppose that when localhost is used the default secure port is 8443
+                buffer.append(":").append("443"); // We suppose that when localhost is used the default secure port is 443
             }
         } else {
             String server = webSiteProps.getHttpHost();

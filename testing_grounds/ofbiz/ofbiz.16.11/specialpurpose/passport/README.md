@@ -19,7 +19,7 @@ Here are the steps for a quick start in OFBiz trunk:
 3. Visit Settings->OAuth applications->Developer applications, click "Register new application" button.
 
 4. In "Register a new OAuth application", fill in your OFBiz website information. Here the 
-Authorization callback URL: https://YourWebSiteOrInternetIp:8443/ecomseo/githubResponse
+Authorization callback URL: https://YourWebSiteOrInternetIp:443/ecomseo/githubResponse
 [Note] As you want to use GitHub to authorize your users, your OFBiz should be able to be visited on internet so that GitHub can forward the users back after OAuth login.
 
 5. Click "Register application" button.
@@ -36,7 +36,7 @@ You'll get your Client ID and Client Secret, write them down for later configura
 9. Edit specialpurpose/ecommerce/widget/CommonScreens.xml, uncomment
    <include-screen name="ListThirdPartyLogins" location="component://passport/widget/PassportScreens.xml"/>
 
-10. Visit https://YourWebSiteOrInternetIp:8443/ecomseo/checkLogin, click GitHub icon in the "Third Party Login" area. You will be forwarded to GitHub OAuth2 login page. After logging in successfully, you will be logged in OFBiz.
+10. Visit https://YourWebSiteOrInternetIp:443/ecomseo/checkLogin, click GitHub icon in the "Third Party Login" area. You will be forwarded to GitHub OAuth2 login page. After logging in successfully, you will be logged in OFBiz.
 
 11. The parameters in specialpurpose/passport/config/gitHubAuth.properties:
 github.env.prefix: test or live, default is test. This value will be store in envPrefix field of GitHubUser entity when a user logged in by GitHub OAuth2.
@@ -58,7 +58,7 @@ Here are the steps for a quick start in OFBiz trunk:
 3. Click "Create Application" button.
 
 4. In "Create a New Application", fill in your OFBiz website information. Here the 
-Authorization callback URL: https://YourWebSiteOrInternetIp:8443/ecomseo/linkedInResponse
+Authorization callback URL: https://YourWebSiteOrInternetIp:443/ecomseo/linkedInResponse
 [Note] As you want to use LinkedIn to authorize your users, your OFBiz should be able to be visited on internet so that LinkedIn can forward the users back after OAuth login.
 
 5. Click "Submit" button.
@@ -77,7 +77,7 @@ You'll get your Client ID and Client Secret, write them down for later configura
 10. Edit specialpurpose/ecommerce/widget/CommonScreens.xml, uncomment
    <include-screen name="ListThirdPartyLogins" location="component://passport/widget/PassportScreens.xml"/>
 
-11. Visit https://YourWebSiteOrInternetIp:8443/ecomseo/checkLogin, click LinkedIn icon in the "Third Party Login" area. You will be forwarded to LinkedIn OAuth2 login page. After logging in successfully, you will be logged in OFBiz.
+11. Visit https://YourWebSiteOrInternetIp:443/ecomseo/checkLogin, click LinkedIn icon in the "Third Party Login" area. You will be forwarded to LinkedIn OAuth2 login page. After logging in successfully, you will be logged in OFBiz.
 
 12. The parameters in specialpurpose/passport/config/linkedInAuth.properties:
 linkedin.env.prefix: test or live, default is test. This value will be store in envPrefix field of LinkedInUser entity when a user logged in by LinkedIn OAuth2.

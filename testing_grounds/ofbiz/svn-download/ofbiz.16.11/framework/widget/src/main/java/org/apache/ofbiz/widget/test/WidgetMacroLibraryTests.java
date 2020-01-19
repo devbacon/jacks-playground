@@ -34,7 +34,7 @@ import org.apache.tika.sax.BodyContentHandler;
 
 public class WidgetMacroLibraryTests extends OFBizTestCase {
 
-    protected String screenUrl = "https://localhost:8443/webtools/control/WebtoolsLayoutDemo" ; //use existing screen to present most of layout use case
+    protected String screenUrl = "https://localhost:443/webtools/control/WebtoolsLayoutDemo" ; //use existing screen to present most of layout use case
     protected final String authentificationQuery = "?USERNAME=admin&PASSWORD=ofbiz";
 
     public WidgetMacroLibraryTests(String name) {
@@ -55,8 +55,8 @@ public class WidgetMacroLibraryTests extends OFBizTestCase {
     public void testHtmlMacroLibrary() throws Exception {
         HttpClient http = initHttpClient();
         if (Start.getInstance().getConfig().portOffset != 0) {
-            Integer port = 8443 + Start.getInstance().getConfig().portOffset;
-            screenUrl = screenUrl.replace("8443", port.toString());
+            Integer port = 443 + Start.getInstance().getConfig().portOffset;
+            screenUrl = screenUrl.replace("443", port.toString());
         }
         http.setUrl(screenUrl.concat(authentificationQuery));
         String screenOutString = http.post();

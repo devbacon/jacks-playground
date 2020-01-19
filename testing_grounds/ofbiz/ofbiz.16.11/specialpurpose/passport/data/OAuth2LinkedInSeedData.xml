@@ -30,7 +30,7 @@ under the License.
                     liveReturnUrl="" 
                     localRedirectUri="/ecomseo/linkedInRedirect" 
                     iconUrl="/passport/images/linkedin.png" fromDate="2011-01-01 00:00:00.0" thruDate=""/>
-    <!-- The testReturnUrl, i.e. https://yourTestWebSiteOrIp:8443/ecomseo/linkedInResponse -->
-    <!-- The liveReturnUrl, i.e. https://yourLiveWebSiteOrIp:8443/ecomseo/linkedInResponse -->
+    <!-- The testReturnUrl, i.e. https://yourTestWebSiteOrIp:443/ecomseo/linkedInResponse -->
+    <!-- The liveReturnUrl, i.e. https://yourLiveWebSiteOrIp:443/ecomseo/linkedInResponse -->
     
 </entity-engine-xml>

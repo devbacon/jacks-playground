@@ -62,7 +62,7 @@ under the License.
                 <property name="mcast-drop-time" value="3000"/>
             </property>
             -->
-            <!-- <property name="ssl-accelerator-port" value="8443"/> -->
+            <!-- <property name="ssl-accelerator-port" value="443"/> -->
             <property name="enable-cross-subdomain-sessions" value="false"/>
         </property>
         <property name="ajp-connector" value="connector">
@@ -126,7 +126,7 @@ under the License.
         <property name="https-connector" value="connector">
             <!-- see http://tomcat.apache.org/tomcat-8.5-doc/config/http.html for reference -->
             <!--<property name="address" value=""/>-->
-            <property name="port" value="8443"/>
+            <property name="port" value="443"/>
             <property name="protocol" value="HTTP/1.1"/>
             <property name="scheme" value="https"/>
             <property name="secure" value="true"/>
@@ -192,7 +192,7 @@ under the License.
         </property>
         <property name="https-connector" value="connector">
             <!--<property name="address" value=""/>-->
-            <property name="port" value="8443"/>
+            <property name="port" value="443"/>
             <property name="protocol" value="HTTP/1.1"/>
             <property name="scheme" value="https"/>
             <property name="secure" value="true"/>

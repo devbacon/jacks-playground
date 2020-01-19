@@ -88,7 +88,7 @@ under the License.
     </service>
 
     <!--  test service for local loopback testing (OFBiz Client SOAP -> OFBiz Server SOAP)  
-        https://ofbiz-vm2.apache.org:8443/webtools/control/SOAPService is the ultimate location for the testRemoteSoap 
+        https://ofbiz-vm2.apache.org:443/webtools/control/SOAPService is the ultimate location for the testRemoteSoap 
         It's redirected from https://demo-trunk.ofbiz.apache.org/webtools/control/SOAPService by the HTTPD frontend installed by Puppet in the demo server, ie ofbiz-vm2.apache.org
         We could use also http://demo-trunk.ofbiz.apache.org/webtools/control/SOAPService but HSTS would sent it to https anyway
         So this can be used only against trunk demo and is not in the tests set to avoid a dependency on Internet -->

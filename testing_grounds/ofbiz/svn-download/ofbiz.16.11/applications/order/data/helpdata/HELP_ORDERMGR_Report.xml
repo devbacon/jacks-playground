@@ -31,13 +31,13 @@
                 </para>
                 <orderedlist>
                     <listitem>
-                        <para>Go to :<link xl:href="https://localhost:8443/bi/control/main">Business Intelligence</link></para>
+                        <para>Go to :<link xl:href="https://localhost:443/bi/control/main">Business Intelligence</link></para>
                     </listitem>
                     <listitem>
                         <para>Click "Quick Init DataWarehouse". System will automatic initial Data in the warehouse for Reports</para>
                     </listitem>
                     <listitem>
-                        <para>Go back to : <link xl:href="https://localhost:8443/ordermgr/control/OrderPurchaseReportOptions">Order Reports.</link></para>
+                        <para>Go back to : <link xl:href="https://localhost:443/ordermgr/control/OrderPurchaseReportOptions">Order Reports.</link></para>
                     </listitem>
                 </orderedlist>
             </section>

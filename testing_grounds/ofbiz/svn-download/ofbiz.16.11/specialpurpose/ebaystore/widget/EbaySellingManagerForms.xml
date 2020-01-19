@@ -721,7 +721,7 @@ under the License.
         <field name="_rowSubmit"  position="1" title="${uiLabelMap.CommonSelect}"><check/></field>
         <field name="productStoreId"><hidden value="${productStoreId}"/></field>
         <field name="orderId" title="Order ID">
-            <hyperlink description="${orderId}" target="https://localhost:8443/ordermgr/control/orderview?orderId=${orderId}" target-type="plain" target-window="_BLANK"/>
+            <hyperlink description="${orderId}" target="https://localhost:443/ordermgr/control/orderview?orderId=${orderId}" target-type="plain" target-window="_BLANK"/>
         </field>
         <field name="externalId" title="Transaction ID"><display description="${externalId}"/></field>
         <field name="ebayUserIdBuyer" title="Winner Bidder"><display description="${ebayUserIdBuyer}"/></field>
@@ -762,7 +762,7 @@ under the License.
         <field name="productStoreId"><hidden value="${productStoreId}"/></field>
         <field name="_rowSubmit" position="1" title="${uiLabelMap.CommonSelect}" use-when="${groovy:String prev=(String)previousItem.get(&quot;externalId&quot;);return new Boolean(!(prev!=null&amp;&amp;prev.equals(externalId)));}"><check/></field>
         <field name="orderId" position="1" title="Order ID" use-when="${groovy:String prev=(String)previousItem.get(&quot;externalId&quot;);return new Boolean(!(prev!=null&amp;&amp;prev.equals(externalId)));}">
-            <hyperlink description="${orderId}" target="https://localhost:8443/ordermgr/control/orderview?orderId=${orderId}" target-type="plain" target-window="_BLANK"/>
+            <hyperlink description="${orderId}" target="https://localhost:443/ordermgr/control/orderview?orderId=${orderId}" target-type="plain" target-window="_BLANK"/>
         </field>
         <field name="externalId" title="External ID" position="1" use-when="${groovy:String prev=(String)previousItem.get(&quot;externalId&quot;);return new Boolean(!(prev!=null&amp;&amp;prev.equals(externalId)));}"><display description="${externalId}"></display></field>
         <field name="ebayUserIdBuyer" title="Winning Bidder" position="1" use-when="${groovy:String prev=(String)previousItem.get(&quot;externalId&quot;);return new Boolean(!(prev!=null&amp;&amp;prev.equals(externalId)));}"><display description="${ebayUserIdBuyer}"></display></field>
