@@ -10,6 +10,7 @@
             <widgets>
                 <decorator-screen name="GameMapCommonDecorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">
+                    
                     </decorator-section>
                 </decorator-screen>
             </widgets>

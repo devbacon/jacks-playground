@@ -1,12 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <entitymodel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/entitymodel.xsd">
-    <!-- ========================================================= -->
-    <!-- ======================== Defaults ======================= -->
-    <!-- ========================================================= -->
+
     <title>Entity of GameMap Component</title>
     <description>None</description>
-    <copyright></copyright>
-    <version></version>
+    <version>1.0</version>
 
+    <entity entity-name="GameMap" package-name="org.apache.ofbiz.gameMap" title="GameMap Entity">
+        <field name="gameMapId" type="id"><description>primary sequenced ID</description></field>
+        <field name="description" type="description"></field>
+        <field name="height" type="integer"></field>
+        <field name="width" type="integer"></field>
+        <prim-key field="gameMapId"/>
+        <relation type="one" fk-name="GM_TILE_ID" rel-entity-name="GameMapTile">
+            <key-map field-name="gameMapTileId"/>
+        </relation>
+        <relation type="one" fk-name="GM_LINE_ID" rel-entity-name="GameMapLine">
+            <key-map field-name="gameMapLineId"/>
+        </relation>
+    </entity>
+  
+    <entity entity-name="GameMapTile" package-name="org.apache.ofbiz.gameMap" title="GameMap Tile Entity">
+        <field name="gameMapTileId" type="id"><description>primary sequenced ID</description></field>
+        <field name="gameMapId" type="id"></field>
+        <field name="column" type="integer"></field>
+        <field name="row" type="integer"></field>
+        <field name="color" type="value"></field>
+        <prim-key field="gameMapTileId"/>
+    </entity>
+
+    <entity entity-name="GameMapLine" package-name="org.apache.ofbiz.gameMap" title="GameMap Line Entity">
+        <field name="gameMapLineId" type="id"><description>primary sequenced ID</description></field>
+        <field name="gameMapId" type="id"></field>
+        <field name="startX" type="integer"></field>
+        <field name="startY" type="integer"></field>
+        <field name="endX" type="integer"></field>
+        <field name="endY" type="integer"></field>
+        <field name="color" type="value"></field>
+        <prim-key field="gameMapLineId"/>
+    </entity>
 </entitymodel>
