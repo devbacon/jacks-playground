@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.apache.ofbiz.base.util.UtilCodecTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-01-19T04:45:48" hostname="L-TPP52-01" time="0.095">
+<testsuite name="org.apache.ofbiz.base.util.UtilCodecTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-01-19T18:44:58" hostname="L-TPP52-01" time="0.129">
   <properties/>
-  <testcase name="testGetEncoder" classname="org.apache.ofbiz.base.util.UtilCodecTests" time="0.06"/>
-  <testcase name="checkStringForHtmlStrictNoneDetectsXSS" classname="org.apache.ofbiz.base.util.UtilCodecTests" time="0.006"/>
+  <testcase name="checkStringForHtmlStrictNoneDetectsXSS" classname="org.apache.ofbiz.base.util.UtilCodecTests" time="0.085"/>
+  <testcase name="testCheckStringForHtmlStrictNone" classname="org.apache.ofbiz.base.util.UtilCodecTests" time="0.01"/>
   <testcase name="canonicalizeRevealsEscapedXSS" classname="org.apache.ofbiz.base.util.UtilCodecTests" time="0.0"/>
-  <testcase name="testCheckStringForHtmlStrictNone" classname="org.apache.ofbiz.base.util.UtilCodecTests" time="0.007"/>
-  <testcase name="testCheckStringForHtmlSafe" classname="org.apache.ofbiz.base.util.UtilCodecTests" time="0.021"/>
-  <system-out><![CDATA[20:45:48.612 [Test worker] ERROR org.apache.ofbiz.base.util.UtilCodec - Canonicalization (format consistency, character escaping that is mixed or double, etc) error for attribute named [double-encoding], String [%2%353Cscript]: org.apache.ofbiz.base.util.UtilCodec$IntrusionException: Input validation failure
+  <testcase name="testCheckStringForHtmlSafe" classname="org.apache.ofbiz.base.util.UtilCodecTests" time="0.031"/>
+  <testcase name="testGetEncoder" classname="org.apache.ofbiz.base.util.UtilCodecTests" time="0.001"/>
+  <system-out><![CDATA[10:44:58.968 [Test worker] ERROR org.apache.ofbiz.base.util.UtilCodec - Canonicalization (format consistency, character escaping that is mixed or double, etc) error for attribute named [double-encoding], String [%2%353Cscript]: org.apache.ofbiz.base.util.UtilCodec$IntrusionException: Input validation failure
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
