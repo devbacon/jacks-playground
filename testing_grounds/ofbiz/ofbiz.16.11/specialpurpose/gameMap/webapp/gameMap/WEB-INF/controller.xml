@@ -6,7 +6,7 @@
          elements found in the common-controller.xml file. -->
     <include location="component://common/webcommon/WEB-INF/common-controller.xml"/>
 
-    <description>MapCreator Component Site Configuration File</description>
+    <description>GameMap Component Site Configuration File</description>
 
     <!-- Events to run on every request before security (chains exempt) -->
     <!--
@@ -20,20 +20,9 @@
     </postprocessor>
     -->
 
-    <!-- Event Mappings -->
-    <request-map uri="createGameMap">
-        <security https="true" auth="true"/>
-        <event type="java" path="com.companyname.mapcreator.events.MapCreatorEvents" invoke="createGameMap"/>
-        <response name="success" type="view" value="main"/>
-        <response name="error" type="view" value="main"/>
-    </request-map>
-
     <!-- Request Mappings -->
-    <request-map uri="main">
-        <security https="true" auth="true"/>
-        <response name="success" type="view" value="main"/>
-    </request-map>
+    <request-map uri="main"><security https="true" auth="true"/><response name="success" type="view" value="main"/></request-map>
     
     <!-- View Mappings -->
-    <view-map name="main" type="screen" page="component://mapCreator/widget/MapCreatorScreens.xml#main"/>
+    <view-map name="main" type="screen" page="component://gameMap/widget/GameMapScreens.xml#main"/>
 </site-conf>

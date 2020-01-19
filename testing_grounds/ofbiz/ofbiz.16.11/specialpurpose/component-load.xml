@@ -18,4 +18,5 @@
   <load-component component-location="passport"/>
   <load-component component-location="ofbizDemo"/>
   <load-component component-location="mapCreator"/>
+  <load-component component-location="gameMap"/>
 </component-loader>

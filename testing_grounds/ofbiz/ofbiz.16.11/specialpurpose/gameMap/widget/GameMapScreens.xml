@@ -6,17 +6,10 @@
         <section>
             <actions>
                 <set field="headerItem" value="main"/><!-- this highlights the selected menu-item with name "main" -->
-                <script location="component://mapCreator/webapp/mapCreator/WEB-INF/actions/main.groovy"/>
             </actions>
             <widgets>
-                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                <decorator-screen name="GameMapCommonDecorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">
-                        <screenlet title="Create Game Map">
-                            <include-form name="CreateGameMap" location="component://mapCreator/widget/MapCreatorForms.xml"/>
-                        </screenlet>
-                        <!-- <platform-specific>
-                            <html><html-template location="component://mapCreator/webapp/mapCreator/ftl/main.ftl"/></html>
-                        </platform-specific> -->
                     </decorator-section>
                 </decorator-screen>
             </widgets>

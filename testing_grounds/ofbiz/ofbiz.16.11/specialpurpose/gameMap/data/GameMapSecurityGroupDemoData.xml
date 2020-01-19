@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SecurityGroupPermission groupId="FULLADMIN" permissionId="GAMEMAP_ADMIN"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="GAMEMAP_CREATE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="GAMEMAP_DELETE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="GAMEMAP_UPDATE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="GAMEMAP_VIEW"/>
+    <SecurityGroupPermission groupId="VIEWADMIN" permissionId="GAMEMAP_VIEW"/>
+    <SecurityGroupPermission groupId="BIZADMIN" permissionId="GAMEMAP_ADMIN"/>
+</entity-engine-xml>

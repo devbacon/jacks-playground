@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SecurityPermission description="View operations in the GameMap Component." permissionId="GAMEMAP_VIEW"/>
+    <SecurityPermission description="Create operations in the GameMap Component." permissionId="GAMEMAP_CREATE"/>
+    <SecurityPermission description="Update operations in the GameMap Component." permissionId="GAMEMAP_UPDATE"/>
+    <SecurityPermission description="Delete operations in the GameMap Component." permissionId="GAMEMAP_DELETE"/>
+    <SecurityPermission description="ALL operations in the GameMap Component." permissionId="GAMEMAP_ADMIN"/>
+
+    <SecurityGroupPermission groupId="SUPER" permissionId="GAMEMAP_ADMIN"/>
+
+</entity-engine-xml>

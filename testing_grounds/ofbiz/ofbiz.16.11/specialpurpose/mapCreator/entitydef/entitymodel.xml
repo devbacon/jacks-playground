@@ -16,8 +16,10 @@
         <field name="width" type="value"></field>
         <prim-key field="mapId"/>
     </entity>
+
+    <!-- TODO: Delete old tile and line entities since they have been replaced -->
   
-    <entity entity-name="Tile" package-name="org.apache.ofbiz.mapCreator" title="MapCreator Tile Entity">
+    <entity entity-name="GameMapTile" package-name="org.apache.ofbiz.mapCreator" title="MapCreator Tile Entity">
         <field name="tileId" type="id"><description>primary sequenced ID</description></field>
         <field name="mapId" type="id"></field>
         <prim-key field="tileId"/>
@@ -26,7 +28,7 @@
         </relation>
     </entity>
 
-    <entity entity-name="Line" package-name="org.apache.ofbiz.mapCreator" title="MapCreator Tile Entity">
+    <entity entity-name="GameMapLine" package-name="org.apache.ofbiz.mapCreator" title="MapCreator Tile Entity">
         <field name="lineId" type="id"><description>primary sequenced ID</description></field>
         <field name="mapId" type="id"></field>
         <field name="xStart" type="numeric"></field>
