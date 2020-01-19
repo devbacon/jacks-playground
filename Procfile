@@ -1,1 +1,1 @@
-web: cd testing_grounds/ofbiz/ofbiz16.11; ./gradlew ofbiz
+web: java -jar testing_grounds/ofbiz/ofbiz.16.11/build/libs/ofbiz.jar

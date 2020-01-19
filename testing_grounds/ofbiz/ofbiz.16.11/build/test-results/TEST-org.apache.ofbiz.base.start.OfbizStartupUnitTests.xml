@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.ofbiz.base.start.OfbizStartupUnitTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-01-17T03:47:33" hostname="L-TPP52-01" time="0.021">
+  <properties/>
+  <testcase name="commandParserDoesNotAcceptPortoffsetWithoutPositiveInteger" classname="org.apache.ofbiz.base.start.OfbizStartupUnitTests" time="0.009"/>
+  <testcase name="commandParserDoesNotAcceptPortoffsetWithoutArgument" classname="org.apache.ofbiz.base.start.OfbizStartupUnitTests" time="0.0"/>
+  <testcase name="commandParserDoesNotAcceptArgumentForStatus" classname="org.apache.ofbiz.base.start.OfbizStartupUnitTests" time="0.0"/>
+  <testcase name="commandParserDoesNotAcceptMoreThanOneCommand" classname="org.apache.ofbiz.base.start.OfbizStartupUnitTests" time="0.0"/>
+  <testcase name="commandParserDoesNotAcceptArgumentForStart" classname="org.apache.ofbiz.base.start.OfbizStartupUnitTests" time="0.0"/>
+  <testcase name="commandParserCombinesMultipleArgsIntoOneCommand" classname="org.apache.ofbiz.base.start.OfbizStartupUnitTests" time="0.01"/>
+  <testcase name="commandParserDoesNotAcceptArgumentForShutdown" classname="org.apache.ofbiz.base.start.OfbizStartupUnitTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
