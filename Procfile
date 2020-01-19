@@ -1,0 +1,1 @@
+web: cd testing_grounds/ofbiz/ofbiz16.11; ./gradlew ofbiz
