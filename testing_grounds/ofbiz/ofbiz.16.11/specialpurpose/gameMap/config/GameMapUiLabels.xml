@@ -12,4 +12,19 @@
     <property key="GameMapViewPermissionError">
         <value xml:lang="en">You are not allowed to view this page.</value>
     </property>
+    <property key="GameMapFind">
+        <value xml:lang="en">Find</value>
+    </property>
+    <property key="GameMapId">
+        <value xml:lang="en">GameMap Demo Id</value>
+    </property>
+    <property key="GameMapDescription">
+        <value xml:lang="en">Description</value>
+    </property>
+    <property key="GameMapHeight">
+        <value xml:lang="en">Height</value>
+    </property>
+    <property key="GameMapWidth">
+        <value xml:lang="en">Width</value>
+    </property>
 </resource>
