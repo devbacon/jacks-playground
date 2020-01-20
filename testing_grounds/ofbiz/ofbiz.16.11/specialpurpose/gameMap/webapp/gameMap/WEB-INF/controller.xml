@@ -44,6 +44,7 @@
         <security https="true" auth="true"/>
         <response name="success" type="view" value="FindGameMap"/>
     </request-map>
+    <!-- TODO: Set this type of page as main page -->
     <request-map uri="AddGameMapFtl">
         <security https="true" auth="true"/>
         <response name="success" type="view" value="AddGameMapFtl"/>

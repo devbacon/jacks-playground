@@ -25,9 +25,9 @@
                 <script location="component://gameMap/webapp/gameMap/WEB-INF/actions/crud/ListGameMap.groovy"/>
             </actions>
             <widgets>
-                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                <decorator-screen name="GameMapCommonDecorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">
-                        <screenlet title="${uiLabelMap.GameMapListGameMaps}">
+                        <!-- <screenlet title="${uiLabelMap.GameMapListGameMaps}">
                             <platform-specific>
                                 <html><html-template location="component://gameMap/webapp/gameMap/crud/ListGameMap.ftl"/></html>
                             </platform-specific>
@@ -36,7 +36,15 @@
                             <platform-specific>
                                 <html><html-template location="component://gameMap/webapp/gameMap/crud/AddGameMap.ftl"/></html>
                             </platform-specific>
-                        </screenlet>
+                        </screenlet> -->
+                        <label style="h4" text="${uiLabelMap.GameMapListGameMaps}"/>
+                        <platform-specific>
+                            <html><html-template location="component://gameMaps/webapp/gameMaps/crud/ListGameMap.ftl"/></html>
+                        </platform-specific>
+                        <label style="h4" text="${uiLabelMap.GameMapAddGameMapFtl}"/>
+                        <platform-specific>
+                            <html><html-template location="component://gameMaps/webapp/gameMaps/crud/AddGameMap.ftl"/></html>
+                        </platform-specific>
                     </decorator-section>
                 </decorator-screen>
             </widgets>

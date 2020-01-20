@@ -1,5 +1,5 @@
 <div class="screenlet-body">
-  <form id="createGameMapEvent" method="post" action="<@ofbizUrl>createGameMapEvent</@ofbizUrl>">
+  <form id="createGameMapEvent" method="post" action="<@ofbizUrl>createGameMap</@ofbizUrl>">
     <input type="hidden" name="addGameMapFromFtl" value="Y"/>
     <fieldset>
       <div>

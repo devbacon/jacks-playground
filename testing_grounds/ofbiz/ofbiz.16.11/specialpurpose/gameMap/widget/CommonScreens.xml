@@ -25,23 +25,34 @@
     <screen name="GameMapCommonDecorator">
         <section>
             <actions>
+                <property-map resource="GameMapUiLabels" map-name="uiLabelMap" global="true"/>
+                <property-map resource="CommonUiLabels" map-name="uiLabelMap" global="true"/>
+    
+                <set field="layoutSettings.companyName" from-field="uiLabelMap.GameMapCompanyName" global="true"/>
+                
+                <!-- Including custom CSS Styles that you want to use in your application view. [] in field can be used to 
+                    set the order of loading CSS files to load if there are multiple -->
+                <set field="layoutSettings.styleSheets[]" value="/gameMap/css/main.css"/>
+    
+                <!-- Including custom JS that you want to use in your application view. [] in field can be used to
+                    set the order of loading of JS files to load if there are multiple -->
+                <set field="layoutSettings.javaScripts[+0]" value="/gameMap/js/main.js" global="true"/>
             </actions>
             <widgets>
-                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
-                    <decorator-section name="body">
-                        <section>
-                            <condition>
-                                <if-has-permission permission="GAMEMAP" action="_VIEW"/>
-                            </condition>
-                            <widgets>
-                                <decorator-section-include name="body"/>
-                            </widgets>
-                            <fail-widgets>
-                                <label style="h3">${uiLabelMap.GameMapViewPermissionError}</label>
-                            </fail-widgets>
-                        </section>
-                    </decorator-section>
-                </decorator-screen>
+                <section>
+                    <condition>
+                        <if-has-permission permission="GAMEMAP" action="_VIEW"/>
+                    </condition>
+                    <widgets>
+                        <platform-specific><html><html-template location="component://gameMap/webapp/gameMap/includes/PreBody.ftl"/></html></platform-specific>
+                        <decorator-section-include name="pre-body"/>
+                        <decorator-section-include name="body"/>
+                        <platform-specific><html><html-template location="component://gameMap/webapp/gameMap/includes/PostBody.ftl"/></html></platform-specific>
+                    </widgets>
+                    <fail-widgets>
+                        <label style="h3">${uiLabelMap.GameMapViewPermissionError}</label>
+                    </fail-widgets>
+                </section>
             </widgets>
         </section>
     </screen>
