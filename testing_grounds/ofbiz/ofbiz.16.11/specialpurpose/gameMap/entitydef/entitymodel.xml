@@ -9,7 +9,7 @@
     <entity entity-name="GameMap" package-name="org.apache.ofbiz.gameMap" title="GameMap Entity">
         <field name="gameMapId" type="id"><description>primary sequenced ID</description></field>
         <field name="name" type="value"></field>
-        <field name="description" type="description"></field>
+        <field name="description" type="text"></field>
         <field name="height" type="integer"></field>
         <field name="width" type="integer"></field>
         <prim-key field="gameMapId"/>

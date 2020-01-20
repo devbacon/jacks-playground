@@ -8,7 +8,7 @@
                 <set field="headerItem" value="main"/><!-- this highlights the selected menu-item with name "main" -->
             </actions>
             <widgets>
-                <decorator-screen name="GameMapCommonDecorator" location="${parameters.mainDecoratorLocation}">
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">
                         <include-form name="AddGameMap" location="component://gameMap/widget/GameMapForms.xml"/>
                     </decorator-section>

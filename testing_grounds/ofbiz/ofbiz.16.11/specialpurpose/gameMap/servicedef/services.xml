@@ -5,9 +5,18 @@
     <vendor></vendor>
     <version>1.0</version>
 
-    <service name="createGameMap" default-entity-name="GameMap" engine="entity-auto" invoke="create" auth="true">
+    <!-- Auto Service -->
+    <!-- <service name="createGameMap" default-entity-name="GameMap" engine="entity-auto" invoke="create" auth="true">
         <description>Create an Game Map record</description>
         <auto-attributes include="pk" mode="OUT" optional="false"/>
         <auto-attributes include="nonpk" mode="IN" optional="false"/>
-    </service>  
+    </service> -->
+
+    <!-- Java Service -->
+    <service name="createGameMap" default-entity-name="GameMap" engine="java"
+            location="com.companyname.gamemap.services.GameMapServices" invoke="createGameMap" auth="true">
+        <description>Create a Game Map record using a service in Java</description>
+        <auto-attributes include="pk" mode="OUT" optional="false"/>
+        <auto-attributes include="nonpk" mode="IN" optional="false"/>
+    </service>
 </services>
