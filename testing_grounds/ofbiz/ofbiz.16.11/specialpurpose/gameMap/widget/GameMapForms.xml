@@ -32,7 +32,8 @@
             </service>
         </actions>
         <field name="gameMapId" title="${uiLabelMap.GameMapId}"><display/></field>
-        <field name="description" title="${uiLabelMap.GameMapDescription}"><display-entity entity-name="OfbizDemoType"/></field>
+        <field name="name" title="${uiLabelMap.GameMapName}"><display/></field>
+        <field name="description" title="${uiLabelMap.GameMapDescription}"><display/></field>
         <field name="height" title="${uiLabelMap.GameMapHeight}" sort-field="true"><display/></field>
         <field name="width" title="${uiLabelMap.GameMapWidth}" sort-field="true"><display/></field>
     </form>

@@ -3,5 +3,6 @@
     <menu name="MainAppBar" title="${uiLabelMap.GameMapApplication}" extends="CommonAppBarMenu" extends-resource="component://common/widget/CommonMenus.xml">
         <menu-item name="main" title="${uiLabelMap.CommonMain}"><link target="main"/></menu-item>
         <menu-item name="findGameMap" title="${uiLabelMap.GameMapFind}"><link target="FindGameMap"/></menu-item>
+        <menu-item name="addGameMapFtl" title="${uiLabelMap.GameMapAddFtl}"><link target="AddGameMapFtl"/></menu-item>
     </menu>
 </menus>

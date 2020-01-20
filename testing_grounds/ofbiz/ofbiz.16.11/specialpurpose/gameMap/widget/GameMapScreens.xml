@@ -17,6 +17,32 @@
         </section>
     </screen>
 
+    <screen name="AddGameMapFtl">
+        <section>
+            <actions>
+                <set field="titleProperty" value="PageTitleAddGameMaps"/>
+                <set field="headerItem" value="addGameMapFtl"/>
+                <script location="component://gameMap/webapp/gameMap/WEB-INF/actions/crud/ListGameMap.groovy"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <screenlet title="${uiLabelMap.GameMapListGameMaps}">
+                            <platform-specific>
+                                <html><html-template location="component://gameMap/webapp/gameMap/crud/ListGameMap.ftl"/></html>
+                            </platform-specific>
+                        </screenlet>
+                        <screenlet title="${uiLabelMap.GameMapAddGameMapServiceByFtl}">
+                            <platform-specific>
+                                <html><html-template location="component://gameMap/webapp/gameMap/crud/AddGameMap.ftl"/></html>
+                            </platform-specific>
+                        </screenlet>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
     <!-- Find and list all game maps in a tabular format -->
     <screen name="FindGameMap">
         <section>
