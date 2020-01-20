@@ -16,7 +16,7 @@
         <value xml:lang="en">Find</value>
     </property>
     <property key="GameMapId">
-        <value xml:lang="en">GameMap Demo Id</value>
+        <value xml:lang="en">Game Map Id</value>
     </property>
     <property key="GameMapDescription">
         <value xml:lang="en">Description</value>
