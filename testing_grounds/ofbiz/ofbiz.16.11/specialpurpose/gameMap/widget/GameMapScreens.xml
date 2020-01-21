@@ -6,13 +6,13 @@
         <section>
             <actions>
                 <set field="headerItem" value="main"/><!-- this highlights the selected menu-item with name "main" -->
-                <script location="component://gameMap/webapp/gameMap/WEB-INF/actions/crud/ListGameMap.groovy"/>
+                <script location="component://gameMap/webapp/gameMap/WEB-INF/actions/main.groovy"/>
             </actions>
             <widgets>
                 <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">
                         <platform-specific>
-                            <html><html-template location="component://gameMap/webapp/gameMap/includes/GameMapList.ftl"/></html>
+                            <html><html-template location="component://gameMap/webapp/gameMap/includes/GameMap.ftl"/></html>
                         </platform-specific>
                     </decorator-section>
                 </decorator-screen>
@@ -30,10 +30,16 @@
             <widgets>
                 <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">
-                        <label style="h4" text="Game Map"/>
-                        <platform-specific>
-                            <html><html-template location="component://gameMaps/webapp/gameMaps/includes/GameMapList.ftl"/></html>
-                        </platform-specific>
+                        <screenlet title="${uiLabelMap.GameMapListGameMaps}">
+                            <platform-specific>
+                                <html><html-template location="component://gameMap/webapp/gameMap/crud/ListGameMap.ftl"/></html>
+                            </platform-specific>
+                        </screenlet>
+                        <screenlet title="${uiLabelMap.GameMapAddGameMapServiceByFtl}">
+                            <platform-specific>
+                                <html><html-template location="component://gameMap/webapp/gameMap/crud/AddGameMap.ftl"/></html>
+                            </platform-specific>
+                        </screenlet>
                     </decorator-section>
                 </decorator-screen>
             </widgets>

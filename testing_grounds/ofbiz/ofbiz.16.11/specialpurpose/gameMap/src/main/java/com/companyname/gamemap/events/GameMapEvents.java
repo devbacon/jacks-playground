@@ -28,7 +28,7 @@ public class GameMapEvents {
         Integer heightInt = Integer.parseInt(heightStr);
         Integer widthInt = Integer.parseInt(widthStr);
 
-        if (UtilValidate.isEmpty(name) || UtilValidate.isEmpty(heightStr) || UtilValidate.isEmpty(widthStr)) {
+        if (UtilValidate.isEmpty(name) || UtilValidate.isEmpty(description) || UtilValidate.isEmpty(heightStr) || UtilValidate.isEmpty(widthStr)) {
             String errMsg = "Name, Height, and Width are required fields on the form and can't be empty.";
             request.setAttribute("_ERROR_MESSAGE_", errMsg);
             return "error";
@@ -36,7 +36,7 @@ public class GameMapEvents {
  
         try {
             Debug.logInfo("======= Creating GameMap record: gameMapId=" + gameMapId + " =========", module);
-            GenericValue newGameMap = delegator.makeValue("GameMap", UtilMisc.toMap("gameMapId", gameMapId, "name", name, "height", heightInt, "width", widthInt));
+            GenericValue newGameMap = delegator.makeValue("GameMap", UtilMisc.toMap("gameMapId", gameMapId, "name", name, "description", description, "height", heightInt, "width", widthInt));
             newGameMap.create();
         } catch (GenericEntityException e) {
             String errMsg = "Unable to create new records in GameMap entity: " + e.toString();
